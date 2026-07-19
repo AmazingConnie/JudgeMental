@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cbddf2f6b80311b95020d10c8a520afbe2dcc670fef79f64dc9849ba73a6e736
-size 399
+using UnityEngine;
+
+namespace Unity.VRTemplate
+{
+    /// <summary>
+    /// Rotates this object at a user defined speed
+    /// </summary>
+    public class Rotator : MonoBehaviour
+    {
+        [SerializeField, Tooltip("Angular velocity in degrees per second")]
+        Vector3 m_Velocity;
+
+        void Update()
+        {
+            transform.Rotate(m_Velocity * Time.deltaTime);
+        }
+    }
+}

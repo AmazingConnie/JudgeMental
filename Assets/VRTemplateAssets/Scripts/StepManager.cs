@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd609cc8bcef16a52640541325e9e5e92b4d9db95bf03961633a529ffcee382d
-size 1005
+using System;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+
+namespace Unity.VRTemplate
+{
+    /// <summary>
+    /// Controls the steps in the in coaching card.
+    /// </summary>
+    public class StepManager : MonoBehaviour
+    {
+        [Serializable]
+        class Step
+        {
+            [SerializeField]
+            public GameObject stepObject;
+
+            [SerializeField]
+            public string buttonText;
+        }
+
+        [SerializeField]
+        public TextMeshProUGUI m_StepButtonTextField;
+
+        [SerializeField]
+        List<Step> m_StepList = new List<Step>();
+
+        int m_CurrentStepIndex = 0;
+
+        public void Next()
+        {
+            m_StepList[m_CurrentStepIndex].stepObject.SetActive(false);
+            m_CurrentStepIndex = (m_CurrentStepIndex + 1) % m_StepList.Count;
+            m_StepList[m_CurrentStepIndex].stepObject.SetActive(true);
+            m_StepButtonTextField.text = m_StepList[m_CurrentStepIndex].buttonText;
+        }
+    }
+}

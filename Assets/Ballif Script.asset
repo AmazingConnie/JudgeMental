@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8d5dec3847edbf755af015bfb95206aec0e4b8c98abb874bf9579620d4242a08
-size 5231
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Ballif Script
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":null,"label":null,"summary":null,"hideLabel":false}],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-949.8958,"y":-408.8233},"zoom":0.6999999,"elements":[{"chainable":false,"member":{"name":"text","parameterTypes":null,"targetType":"UnityEngine.UI.Text","targetTypeName":"UnityEngine.UI.Text","$version":"A"},"defaultValues":{"target":null,"input":{"$content":"Order
+      In The Court!","$type":"System.String"}},"position":{"x":-1138.0,"y":-258.0},"guid":"3817b597-0014-451d-a5f0-e27242a687a5","$version":"A","$type":"Unity.VisualScripting.SetMember","$id":"10"},{"chainable":false,"parameterNames":["animation"],"member":{"name":"Blend","parameterTypes":["System.String"],"targetType":"UnityEngine.Animation","targetTypeName":"UnityEngine.Animation","$version":"A"},"defaultValues":{"target":null,"%animation":{"$content":"","$type":"System.String"}},"position":{"x":-663.0,"y":-329.0},"guid":"b7653aef-29a6-42f4-81ab-8bacf34066b0","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"13"},{"chainable":false,"member":{"name":"text","parameterTypes":null,"targetType":"UnityEngine.UI.Text","targetTypeName":"UnityEngine.UI.Text","$version":"A"},"defaultValues":{"target":null,"input":{"$content":"Anyways....The
+      defendent may now speak.","$type":"System.String"}},"position":{"x":-116.0,"y":-55.0},"guid":"6c2a53b6-59a1-4636-908c-0f029c68dc6b","$version":"A","$type":"Unity.VisualScripting.SetMember","$id":"17"},{"chainable":false,"member":{"name":"text","parameterTypes":null,"targetType":"UnityEngine.UI.Text","targetTypeName":"UnityEngine.UI.Text","$version":"A"},"defaultValues":{"target":null,"input":{"$content":"Did
+      you see me bust a move everyone?","$type":"System.String"}},"position":{"x":-511.0,"y":-59.0},"guid":"8201ae7b-8f9a-4b3e-b3ee-4adf9e6a3911","$version":"A","$type":"Unity.VisualScripting.SetMember","$id":"20"},{"coroutine":false,"defaultValues":{},"position":{"x":-1540.0,"y":-656.0},"guid":"010c83e1-6d3f-47c7-bb95-ae7203da8846","$version":"A","$type":"Unity.VisualScripting.Update","$id":"23"},{"argumentCount":0,"coroutine":true,"defaultValues":{"target":null,"name":{"$content":"Change
+      Text","$type":"System.String"}},"position":{"x":-1627.0,"y":-248.0},"guid":"caec4bcc-76f4-4001-afcc-bd24d37f0831","$version":"A","$type":"Unity.VisualScripting.CustomEvent","$id":"25"},{"argumentCount":0,"defaultValues":{"name":{"$content":"Change
+      Text","$type":"System.String"},"target":null},"position":{"x":-1010.0,"y":-571.0},"guid":"082bbf13-3a7b-4995-8d9c-8bcd0d55e363","$version":"A","$type":"Unity.VisualScripting.TriggerCustomEvent","$id":"27"},{"chainable":false,"member":{"name":"text","parameterTypes":null,"targetType":"UnityEngine.UI.Text","targetTypeName":"UnityEngine.UI.Text","$version":"A"},"defaultValues":{"target":null,"input":{"$content":"Your
+      Honor.  This is case number 69 on the count of the matters of Hawk Tuah vs
+      ...","$type":"System.String"}},"position":{"x":-954.0,"y":-44.0},"guid":"13e3c6c5-c845-4573-80cf-2a9653b8660c","$version":"A","$type":"Unity.VisualScripting.SetMember","$id":"29"},{"sourceUnit":{"$ref":"20"},"sourceKey":"assigned","destinationUnit":{"$ref":"17"},"destinationKey":"assign","guid":"37d4b75b-6316-4104-94d8-9856c66b9ba7","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"29"},"sourceKey":"assigned","destinationUnit":{"$ref":"13"},"destinationKey":"enter","guid":"acef3f38-004b-4c82-968f-9ffae6ca0d3b","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"exit","destinationUnit":{"$ref":"20"},"destinationKey":"assign","guid":"a53fbd43-1648-4968-be1c-73cc64641426","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"23"},"sourceKey":"trigger","destinationUnit":{"$ref":"27"},"destinationKey":"enter","guid":"de013731-838f-4c45-9a54-ee50bc7ad60d","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"25"},"sourceKey":"trigger","destinationUnit":{"$ref":"10"},"destinationKey":"assign","guid":"2f22321a-a69c-4f6e-9134-47a5fd494289","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"10"},"sourceKey":"assigned","destinationUnit":{"$ref":"29"},"destinationKey":"assign","guid":"ea0fe592-995c-4170-b0f8-0f8af6dcbd01","$type":"Unity.VisualScripting.ControlConnection"},{"position":{"xMin":-1723.0,"yMin":-849.0,"xMax":-1506.0,"yMax":-712.0},"title":"This
+      shit sucks","body":"I Hate This\n","colorTheme":"Classic","guid":"a90a70e0-818e-4133-b646-8efdd785c3ab","$type":"Unity.VisualScripting.StickyNote"}],"$version":"A"}}'
+    _objectReferences: []

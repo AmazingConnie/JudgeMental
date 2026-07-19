@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c697e86d301848f8a519884c28beddeae6e22d9470a23fef15c761eb97317444
-size 471
+fileFormatVersion: 2
+guid: e6a967d92468bec438bbe44634957d5f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Socake
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

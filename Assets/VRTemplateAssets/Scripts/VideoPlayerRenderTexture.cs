@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12376524cfef7750493cbe2d7c4178bbd5ef53fe9049ff81b3fce61348ebff8e
-size 1355
+using UnityEngine;
+using UnityEngine.Video;
+
+namespace Unity.VRTemplate
+{
+    /// <summary>
+    /// Create a RenderTexture for rendering video to a target renderer.
+    /// </summary>
+    [RequireComponent(typeof(VideoPlayer))]
+    public class VideoPlayerRenderTexture : MonoBehaviour
+    {
+        const string k_ShaderName = "Unlit/Texture";
+
+        [SerializeField]
+        [Tooltip("The target Renderer which will display the video.")]
+        Renderer m_Renderer;
+
+        [SerializeField]
+        [Tooltip("The width of the RenderTexture which will be created.")]
+        int m_RenderTextureWidth = 1920;
+
+        [SerializeField]
+        [Tooltip("The height of the RenderTexture which will be created.")]
+        int m_RenderTextureHeight = 1080;
+
+        [SerializeField]
+        [Tooltip("The bit depth of the depth channel for the RenderTexture which will be created.")]
+        int m_RenderTextureDepth;
+
+        void Start()
+        {
+            var renderTexture = new RenderTexture(m_RenderTextureWidth, m_RenderTextureHeight, m_RenderTextureDepth);
+            renderTexture.Create();
+            var material = new Material(Shader.Find(k_ShaderName));
+            material.mainTexture = renderTexture;
+            GetComponent<VideoPlayer>().targetTexture = renderTexture;
+            m_Renderer.material = material;
+        }
+    }
+}

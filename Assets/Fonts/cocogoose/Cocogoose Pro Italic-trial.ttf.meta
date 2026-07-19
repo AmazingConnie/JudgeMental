@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e6c712eef047c3d177ca0d0ff6bf1ba992438507cf634771c5067507c31d2ff3
-size 478
+fileFormatVersion: 2
+guid: 04ab5542bbb7ef349993824735c379fe
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Cocogoose Pro
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

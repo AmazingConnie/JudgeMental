@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ad9a8c084f8b0cbf75ef78f968f2f9214387f047b497e091d3596bb6e3bcba0
-size 1248
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+
+public class SetTurnTypeFromPlayerPref : MonoBehaviour
+{
+    public ActionBasedSnapTurnProvider snapTurn;
+    public ActionBasedContinuousTurnProvider continuousTurn;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        ApplyPlayerPref();
+    }
+
+    public void ApplyPlayerPref()
+    {
+        if(PlayerPrefs.HasKey("turn"))
+        {
+            int value = PlayerPrefs.GetInt("turn");
+            if(value == 0)
+            {
+                snapTurn.leftHandSnapTurnAction.action.Enable();
+                snapTurn.rightHandSnapTurnAction.action.Enable();
+                continuousTurn.leftHandTurnAction.action.Disable();
+                continuousTurn.rightHandTurnAction.action.Disable();
+            }
+            else if(value == 1)
+            {
+                snapTurn.leftHandSnapTurnAction.action.Disable();
+                snapTurn.rightHandSnapTurnAction.action.Disable();
+                continuousTurn.leftHandTurnAction.action.Enable();
+                continuousTurn.rightHandTurnAction.action.Enable();
+            }
+        }
+    }
+}

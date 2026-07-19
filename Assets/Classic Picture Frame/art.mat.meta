@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aeb89192af4defde625f0ed6550e915be603975962ede6e09685bb9c3699f3b7
-size 364
+fileFormatVersion: 2
+guid: 479e5ad90db0dcf45b06b665200721bf
+timeCreated: 1458773407
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 59038
+  packageName: Classic Picture Frame
+  packageVersion: 1.0
+  assetPath: Assets/Classic Picture Frame/art.mat
+  uploadId: 109222

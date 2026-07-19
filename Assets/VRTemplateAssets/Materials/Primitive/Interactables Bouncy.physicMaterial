@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c3c64c96ca8e583bb90d3efad14e1e8b9d4343b64f28a1cd3f3eaa8f8e188efd
-size 371
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!134 &13400000
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Interactables Bouncy
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 1
+  m_FrictionCombine: 0
+  m_BounceCombine: 0

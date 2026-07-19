@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:85ce6e1de2c4db99c639c1e89f13248eaa49eb983bc32e82445061aa7213f0b9
-size 1333
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/CourthouseXR.unity
+    guid: 4c1c2576341002747ad8a7ce0dff9983
+  - enabled: 1
+    path: Assets/Scenes/Apartment.unity
+    guid: 4e9fef26e6adb88479ad1b9834a32d94
+  - enabled: 1
+    path: Assets/Scenes/ApartmentBad.unity
+    guid: c9664b7a69f807a42a0f608ba38e48fd
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 9bec1ce6a03ccba4b9a8215241b32e63, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: a49cadc1a815591479693b955ccf08c1, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 985fdffee33a5944396199c6b7145dd4, type: 3}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1a4c68ca72a83449f938d669337cb305, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 189f9a59291004bc6911e7d9175da7d5, type: 2}
+  m_UseUCBPForAssetBundles: 0
